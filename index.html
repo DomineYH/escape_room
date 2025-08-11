@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방탈출: 비밀의 교실</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- 배경 이미지 및 클릭 가능 영역 -->
+        <img src="BG01.jpg" alt="교실 배경" class="background-image">
+        
+        <div class="clickable-area" id="area-book" style="top: 75%; left: 30%; width: 40%; height: 20%;"></div>
+        <div class="clickable-area" id="area-clock" style="top: 13%; left: 63%; width: 12%; height: 20%;"></div>
+        <div class="clickable-area" id="area-speaker" style="top: 18%; left: 23%; width: 8%; height: 18%;"></div>
+        <div class="clickable-area" id="area-computer" style="top: 50%; left: 70%; width: 15%; height: 20%;"></div>
+        <div class="clickable-area" id="area-door" style="top: 25%; left: 45%; width: 15%; height: 55%;"></div>
+
+        <!-- 게임 설명 및 힌트 표시 영역 -->
+        <div id="info-box">
+            <h1>방탈출: 비밀의 교실</h1>
+            <p>교실 곳곳에 숨겨진 단서를 찾아 비밀번호를 완성하고 탈출하세요. 제한 시간은 없습니다. 문을 열기 위한 최종 비밀번호는 4자리입니다.</p>
+            <div id="hint-display">
+                <h2>획득한 힌트</h2>
+                <ul>
+                    <li id="hint1">힌트 1: ?</li>
+                    <li id="hint2">힌트 2: ?</li>
+                    <li id="hint3">힌트 3: ?</li>
+                    <li id="hint4">힌트 4: ?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모달창 영역 -->
+    <div id="modal-container" class="hidden">
+        <div id="modal-content">
+            <h2 id="modal-title"></h2>
+            <div id="modal-body"></div>
+            <button id="modal-close-btn">닫기</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
